@@ -26,9 +26,7 @@ export default function SignDetailsPage() {
 }
 
 export async function loader({ params }) {
-  const res = await fetch(
-    'https://app.24sata.hr/fapi/horoscope/?include=horoscope'
-  );
+  const res = await fetch('API');
   const data = await res.json();
 
   const signs = data.data;
