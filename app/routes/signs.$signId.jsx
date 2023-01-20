@@ -10,7 +10,9 @@ export default function SignDetailsPage() {
     <main id="sign-details">
       <header>
         <nav>
-          <Link to="/signs">Back to signs</Link>
+          <Link to="/signs">
+            <strong>Back to signs</strong>
+          </Link>
         </nav>
         <h1>{sign.name}</h1>
         <h6>
@@ -24,8 +26,11 @@ export default function SignDetailsPage() {
 }
 
 export async function loader({ params }) {
-  const res = await fetch('API');
+  const res = await fetch(
+    'https://app.24sata.hr/fapi/horoscope/?include=horoscope'
+  );
   const data = await res.json();
+
   const signs = data.data;
 
   const incl = data.included;

@@ -9,7 +9,10 @@ export default function Index() {
       <p>Try our early beta release and never loose track of your future.</p>
       <p>
         This app was created with awesome{' '}
-        <Link to="https://remix.run/">Remix.js</Link> libary, check it out!{' '}
+        <a href="https://remix.run/">
+          <strong>Remix.js</strong>
+        </a>{' '}
+        libary, check it out!{' '}
       </p>
       <p id="cta">
         <Link to="/signs">Go!</Link>

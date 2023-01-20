@@ -13,10 +13,12 @@ export default function SignsPage() {
 }
 
 export async function loader() {
-  const res = await fetch('API');
-  const data = await res.json();
-  // console.log(data.data)
-
+  const res = await fetch(
+    'https://app.24sata.hr/fapi/horoscope/?include=horoscope'
+  );
+  let data = await res.json();
+  // data = data.data;
+  console.log(data);
   return data.data;
 }
 

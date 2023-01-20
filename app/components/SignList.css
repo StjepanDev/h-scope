@@ -1,4 +1,4 @@
-#note-list {
+#sign-list {
   max-width: 68rem;
   display: flex;
   flex-wrap: wrap;
@@ -6,13 +6,14 @@
   gap: 1rem;
   list-style: none;
   margin: 2rem auto;
+  padding: 2rem;
 }
 
-#note-list a {
+#sign-list a {
   text-decoration: none;
 }
 
-.note {
+.sign {
   width: 30%;
   background-color: var(--color-primary-700);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -22,12 +23,12 @@
   transition: all 0.3s ease-out;
 }
 
-.note:hover {
+.sign:hover {
   background-color: var(--color-primary-600);
   transform: translateY(-0.25rem);
 }
 
-.note-meta {
+.sign-meta {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -41,12 +42,12 @@
   border-bottom: 2px solid var(--color-primary-300);
 }
 
-.note h2 {
+.sign h2 {
   margin: 0 0 0.5rem 0;
   color: var(--color-primary-200);
 }
 
-.note p {
+.sign p {
   margin: 0;
   color: var(--color-primary-100);
   white-space: nowrap;

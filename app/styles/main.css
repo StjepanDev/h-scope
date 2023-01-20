@@ -83,6 +83,11 @@ a {
   text-decoration: none;
   color: var(--color-secondary-400);
 }
+
+h6 {
+  color: var(--color-secondary-300);
+}
+
 @keyframes fade-blur-in {
   from {
     opacity: 0;
