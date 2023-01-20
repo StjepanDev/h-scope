@@ -21,6 +21,7 @@
   border-radius: 4px;
   animation: fade-blur-in 1s ease-out forwards;
   transition: all 0.3s ease-out;
+  text-align: center;
 }
 
 .sign:hover {
