@@ -3,6 +3,7 @@ import { Link } from '@remix-run/react';
 import styles from './SignList.css';
 
 function SignList({ data }) {
+  // console.log(data.);
   return (
     <ul id="sign-list">
       {data.map((sign, index) => (

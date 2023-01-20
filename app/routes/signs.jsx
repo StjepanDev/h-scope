@@ -7,17 +7,20 @@ export default function SignsPage() {
 
   return (
     <main>
-      <SignList data={data} />
+      <SignList data={data.newData} />
     </main>
   );
 }
 
 export async function loader() {
   const res = await fetch('API');
-  let data = await res.json();
-  // data = data.data;
-  console.log(data);
-  return data.data;
+  const resData = await res.json();
+  const { data } = resData;
+  const newData = data.map((data) => {
+    return { ...data, links: {} };
+  });
+  // console.log(newData);
+  return { newData };
 }
 
 export function links() {
